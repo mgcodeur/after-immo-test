@@ -1,8 +1,36 @@
 import Image from "next/image";
-import ChevronDownIcon from "@/components/icons/chevron-down";
 import Reveal from "@/components/motion/reveal";
+import Accordion from "@/components/ui/accordion";
+import type { AccordionItem } from "@/types/ui/accordion";
 
 export default function Faq() {
+  const questions: AccordionItem[] = [
+    {
+      id: "duree-construction",
+      title: "Combien de temps dure la construction d’une piscine ?",
+      content:
+        "Comptez huit à douze semaines entre le premier coup de pelle et la mise en eau, selon la nature du terrain et les finitions retenues. Un planning détaillé vous est remis dès la validation de l’étude technique.",
+    },
+    {
+      id: "sur-mesure",
+      title: "Proposez-vous des piscines sur mesure ?",
+      content:
+        "Chaque bassin est dessiné à partir de votre terrain, de vos usages et de votre budget. Forme libre, couloir de nage, plage immergée ou débordement : nous construisons le projet que vous avez en tête.",
+    },
+    {
+      id: "type-de-piscine",
+      title: "Quel type de piscine est le plus adapté à mon terrain ?",
+      content:
+        "Tout dépend de la nature du sol, de la pente et de l’accès au chantier. Une visite gratuite nous permet de vous orienter vers le béton, la coque ou le bloc à bancher, avec le coût et les délais de chaque solution.",
+    },
+    {
+      id: "eclairage-led",
+      title: "Proposez-vous des éclairages LED pour piscine ?",
+      content:
+        "Nous installons des projecteurs LED blancs ou multicolores, pilotables depuis votre téléphone. Ils s’intègrent aussi bien à une piscine neuve qu’à la rénovation d’un bassin existant.",
+    },
+  ];
+
   return (
     <section id="faq" className="app-container flex flex-col gap-5 text-white lg:flex-row">
       <Reveal className="bg-secondary w-full rounded-[30px] px-6 py-8 sm:px-10 lg:px-15 lg:py-10">
@@ -77,70 +105,7 @@ export default function Faq() {
       </Reveal>
 
       <Reveal className="bg-dark w-full rounded-[30px] px-6 py-10 sm:px-10 lg:px-15 lg:py-20" delay={0.12}>
-        <div className="mb-9.5">
-          <div className="flex items-center justify-between gap-6 lg:gap-12.5">
-            <h3 className="text-[17px] leading-6 font-medium lg:text-[20px] lg:leading-none">
-              Combien de temps dure la construction d’une piscine ?
-            </h3>
-            <button
-              type="button"
-              aria-expanded="false"
-              aria-label="Afficher la réponse : Combien de temps dure la construction d’une piscine ?"
-              className="text-dark hover:bg-white-hover flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white transition-colors duration-200"
-            >
-              <ChevronDownIcon />
-            </button>
-          </div>
-          <hr className="mt-7.5 border-t border-white/50" />
-        </div>
-        <div className="mb-9.5">
-          <div className="flex items-center justify-between gap-6 lg:gap-12.5">
-            <h3 className="text-[17px] leading-6 font-medium lg:text-[20px] lg:leading-none">
-              Proposez-vous des piscines sur mesure ?
-            </h3>
-            <button
-              type="button"
-              aria-expanded="false"
-              aria-label="Afficher la réponse : Proposez-vous des piscines sur mesure ?"
-              className="text-dark hover:bg-white-hover flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white transition-colors duration-200"
-            >
-              <ChevronDownIcon />
-            </button>
-          </div>
-          <hr className="mt-7.5 border-t border-white/50" />
-        </div>
-        <div className="mb-9.5">
-          <div className="flex items-center justify-between gap-6 lg:gap-12.5">
-            <h3 className="text-[17px] leading-6 font-medium lg:text-[20px] lg:leading-none">
-              Quel type de piscine est le plus adapté à mon terrain ?
-            </h3>
-            <button
-              type="button"
-              aria-expanded="false"
-              aria-label="Afficher la réponse : Quel type de piscine est le plus adapté à mon terrain ?"
-              className="text-dark hover:bg-white-hover flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white transition-colors duration-200"
-            >
-              <ChevronDownIcon />
-            </button>
-          </div>
-          <hr className="mt-7.5 border-t border-white/50" />
-        </div>
-        <div>
-          <div className="flex items-center justify-between gap-6 lg:gap-12.5">
-            <h3 className="text-[17px] leading-6 font-medium lg:text-[20px] lg:leading-none">
-              Proposez-vous des éclairages LED pour piscine ?
-            </h3>
-            <button
-              type="button"
-              aria-expanded="false"
-              aria-label="Afficher la réponse : Proposez-vous des éclairages LED pour piscine ?"
-              className="text-dark hover:bg-white-hover flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white transition-colors duration-200"
-            >
-              <ChevronDownIcon />
-            </button>
-          </div>
-          <hr className="mt-7.5 border-t border-white/50" />
-        </div>
+        <Accordion items={questions} />
       </Reveal>
     </section>
   );
