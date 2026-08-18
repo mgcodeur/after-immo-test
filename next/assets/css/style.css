@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #009efc;
+  --color-dark: #1e1e1e;
+  --color-secondary: #ff7903;
+
+  --color-primary-hover: color-mix(in oklab, var(--color-primary) 90%, black);
+  --color-secondary-hover: color-mix(in oklab, var(--color-secondary) 91%, black);
+  --color-dark-hover: color-mix(in oklab, var(--color-dark) 91%, white);
+  --color-white-hover: color-mix(in oklab, white 93%, black);
+
+  --font-sans:
+    var(--font-inter-sans), "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-inter:
+    var(--font-inter-sans), "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@keyframes enter-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+}
+
+.enter {
+  animation-name: enter-up;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-fill-mode: both;
+  will-change: opacity, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .enter {
+    animation: none;
+  }
+}
+
+html {
+  scroll-padding-top: 6rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.app-container {
+  @apply container mx-auto px-3 md:px-0;
+}
+
+.header-glass {
+  @apply bg-white/24 ring-[0.3px] ring-white;
+}
+
+.header-glass-strong {
+  @apply bg-white/44 ring-[0.3px] ring-white;
+}
+
+[data-scrolled] .header-glass {
+  @apply bg-dark/75 ring-white/25;
+}
+
+[data-scrolled] .header-glass-strong {
+  @apply bg-dark/85 ring-white/40;
+}
+
+a.header-glass:hover,
+button.header-glass:hover {
+  @apply bg-white/36;
+}
+
+a.header-glass-strong:hover,
+button.header-glass-strong:hover {
+  @apply bg-white/56;
+}
+
+[data-scrolled] a.header-glass:hover,
+[data-scrolled] button.header-glass:hover {
+  @apply bg-dark/88;
+}
+
+[data-scrolled] a.header-glass-strong:hover,
+[data-scrolled] button.header-glass-strong:hover {
+  @apply bg-dark/95;
+}
+
+button {
+  @apply cursor-pointer;
+}

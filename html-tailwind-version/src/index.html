@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivoire Pool | Construction de piscines sur mesure à Abidjan</title>
+    <meta
+      name="description"
+      content="Ivoire Pool conçoit, construit, rénove et entretient des piscines sur mesure haut de gamme à Abidjan, en Côte d'Ivoire. Demandez votre estimation gratuite."
+    />
+    <meta name="theme-color" content="#009efc" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ivoire Pool" />
+    <meta property="og:locale" content="fr_CI" />
+    <meta property="og:title" content="Ivoire Pool | Construction de piscines sur mesure à Abidjan" />
+    <meta
+      property="og:description"
+      content="Ivoire Pool conçoit, construit, rénove et entretient des piscines sur mesure haut de gamme à Abidjan, en Côte d'Ivoire."
+    />
+    <meta property="og:image" content="/assets/hero-image.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <include src="src/partials/font.html"></include>
+  </head>
+  <body class="text-dark leading-none tracking-[-0.06em]">
+    <include src="src/components/header.html"></include>
+
+    <main>
+      <include src="src/sections/home/hero.html"></include>
+
+      <include src="src/sections/home/about.html"></include>
+
+      <include src="src/sections/home/showcase.html"></include>
+
+      <include src="src/sections/home/services.html"></include>
+
+      <include src="src/sections/home/engagements.html"></include>
+
+      <include src="src/sections/home/portfolio.html"></include>
+
+      <include src="src/sections/home/testimonials.html"></include>
+
+      <include src="src/sections/home/faq.html"></include>
+
+      <include src="src/sections/home/fetures.html"></include>
+
+      <include src="src/sections/home/video.html"></include>
+    </main>
+
+    <include src="src/sections/home/footer.html"></include>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Ivoire Pool",
+        "description": "Conception, construction, rénovation et entretien de piscines sur mesure à Abidjan.",
+        "image": "/assets/hero-image.webp",
+        "telephone": "+2250757027157",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "L2 rue des jardins, Cocody, 2e étage magasin Ixina",
+          "addressLocality": "Abidjan",
+          "addressCountry": "CI"
+        },
+        "areaServed": { "@type": "City", "name": "Abidjan" },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "20:30"
+          }
+        ]
+      }
+    </script>
+
+    <script type="module" src="main.ts"></script>
+  </body>
+</html>

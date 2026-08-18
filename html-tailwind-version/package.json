@@ -1,0 +1,29 @@
+{
+  "name": "after-immo-technical-test",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "@prettier/plugin-oxc": "^0.1.3",
+    "@u3u/prettier-config": "^5.2.0",
+    "prettier": "^3.8.1",
+    "prettier-plugin-ember-template-tag": "^2.1.3",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.1",
+    "vite-plugin-include-html": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}

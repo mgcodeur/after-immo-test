@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #009efc;
+  --color-dark: #1e1e1e;
+  --color-secondary: #ff7903;
+
+  --font-sans:
+    'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
+
+.app-container {
+  @apply container mx-auto px-3 md:px-0;
+}
+
+button {
+  @apply cursor-pointer;
+}
