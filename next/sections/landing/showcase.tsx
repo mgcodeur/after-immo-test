@@ -37,7 +37,7 @@ export default function Showcase() {
               </button>
             </div>
           </Reveal>
-          <Reveal className="order-1 flex shrink-0 justify-center xl:order-2 xl:justify-end" delay={0.12}>
+          <Reveal className="order-1 flex shrink-0 justify-center xl:order-2 xl:justify-end" order={1}>
             <Image
               src="/assets/showcase/ing.webp"
               alt="Piscine personnalisée équipée réalisée par Ivoire Pool"

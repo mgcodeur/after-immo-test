@@ -40,6 +40,16 @@
   }
 }
 
+[data-reveal] {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+  }
+}
+
 html {
   scroll-padding-top: 6rem;
 }

@@ -36,7 +36,7 @@ export default function Portfolio() {
           </Reveal>
         </ParallaxItem>
         <ParallaxItem className="shrink-0" distance={-90}>
-          <Reveal className="flex flex-col gap-5 sm:flex-row" delay={0.12}>
+          <Reveal className="flex flex-col gap-5 sm:flex-row" order={1}>
             <Image
               src="/assets/portfolio/1.webp"
               alt="Projet de piscine réalisé par Ivoire Pool à Abidjan"

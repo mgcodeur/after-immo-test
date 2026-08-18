@@ -48,7 +48,7 @@ export default function Testimonials() {
             className="h-59.5 w-full min-w-0 rounded-[10px] object-cover lg:w-68"
           />
         </Reveal>
-        <Reveal className="w-full lg:w-auto lg:max-w-84.5" delay={0.12}>
+        <Reveal className="w-full lg:w-auto lg:max-w-84.5" order={1}>
           <h3 className="text-center font-semibold lg:text-start">Nunc vulputate libero</h3>
           <p className="mt-6 text-center lg:text-start">
             Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora .

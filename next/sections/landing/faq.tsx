@@ -104,7 +104,7 @@ export default function Faq() {
         </a>
       </Reveal>
 
-      <Reveal className="bg-dark w-full rounded-[30px] px-6 py-10 sm:px-10 lg:px-15 lg:py-20" delay={0.12}>
+      <Reveal className="bg-dark w-full rounded-[30px] px-6 py-10 sm:px-10 lg:px-15 lg:py-20" order={1}>
         <Accordion items={questions} />
       </Reveal>
     </section>

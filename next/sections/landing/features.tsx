@@ -21,7 +21,7 @@ export default function Features() {
           </Reveal>
         </ParallaxItem>
         <ParallaxItem distance={-90}>
-          <Reveal delay={0.12}>
+          <Reveal order={1}>
             <ul className="mt-16 flex flex-col gap-5 md:mt-28 lg:mt-60 xl:flex-row xl:items-end">
               <li className="relative w-full overflow-hidden rounded-[30px] bg-white px-6 py-6 sm:px-8 sm:py-7">
                 <div className="absolute top-0 right-0 text-primary">

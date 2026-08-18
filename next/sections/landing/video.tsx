@@ -14,7 +14,7 @@ export default function Video() {
         Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent
         per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
       </p>
-      <Reveal delay={0.12}>
+      <Reveal order={1}>
         <div
           data-youtube-facade
           data-video-id="eWnd3QQQKb0"

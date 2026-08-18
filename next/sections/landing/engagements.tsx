@@ -17,7 +17,7 @@ export default function Engagements() {
           </Reveal>
           <Reveal
             className="flex w-full shrink-0 flex-col items-center gap-6 rounded-[30px] bg-white p-4.5 md:flex-row md:gap-13.25 md:pe-9.5 xl:max-w-153.75"
-            delay={0.12}
+            order={1}
           >
             <Image
               src="/assets/engagements/1.webp"
@@ -64,7 +64,7 @@ export default function Engagements() {
             />
           </Reveal>
 
-          <Reveal className="flex w-full flex-col items-start xl:w-auto xl:items-end" delay={0.12}>
+          <Reveal className="flex w-full flex-col items-start xl:w-auto xl:items-end" order={1}>
             <p className="xl:max-w-68 xl:text-end">
               Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
               tempus urna at turpis condimentum lobortis.
