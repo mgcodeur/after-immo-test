@@ -28,9 +28,15 @@ export default function Services() {
               Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora
               torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
             </p>
-            <a href="#" className="group mt-8 flex items-center gap-x-6.5 lg:mt-11.5">
-              <span className="font-medium">Demander une estimation</span>
-              <span className="bg-secondary group-hover:bg-secondary-hover flex h-9.25 w-9.25 items-center justify-center rounded-full text-white transition-colors duration-200">
+            <a href="#" className="group relative mt-8 -ml-5 flex w-fit items-center gap-x-6.5 pl-5 lg:mt-11.5">
+              <span
+                aria-hidden="true"
+                className="bg-secondary group-hover:bg-secondary-hover absolute inset-y-0 right-0 w-9.25 rounded-full transition-[width,background-color] duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:w-full"
+              />
+              <span className="relative font-medium transition-colors duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:text-white">
+                Demander une estimation
+              </span>
+              <span className="relative flex h-9.25 w-9.25 items-center justify-center text-white transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rotate-45">
                 <ArrowUpRightIcon />
               </span>
             </a>
@@ -55,9 +61,15 @@ export default function Services() {
               Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora
               torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
             </p>
-            <a href="#" className="group mt-8 flex items-center gap-x-6.5 lg:mt-11.5">
-              <span className="font-medium">Demander une estimation</span>
-              <span className="bg-secondary group-hover:bg-secondary-hover flex h-9.25 w-9.25 items-center justify-center rounded-full text-white transition-colors duration-200">
+            <a href="#" className="group relative mt-8 -ml-5 flex w-fit items-center gap-x-6.5 pl-5 lg:mt-11.5">
+              <span
+                aria-hidden="true"
+                className="bg-secondary group-hover:bg-secondary-hover absolute inset-y-0 right-0 w-9.25 rounded-full transition-[width,background-color] duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:w-full"
+              />
+              <span className="relative font-medium transition-colors duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:text-white">
+                Demander une estimation
+              </span>
+              <span className="relative flex h-9.25 w-9.25 items-center justify-center text-white transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rotate-45">
                 <ArrowUpRightIcon />
               </span>
             </a>
@@ -82,9 +94,15 @@ export default function Services() {
               Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora
               torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
             </p>
-            <a href="#" className="group mt-8 flex items-center gap-x-6.5 lg:mt-11.5">
-              <span className="font-medium">Demander une estimation</span>
-              <span className="bg-secondary group-hover:bg-secondary-hover flex h-9.25 w-9.25 items-center justify-center rounded-full text-white transition-colors duration-200">
+            <a href="#" className="group relative mt-8 -ml-5 flex w-fit items-center gap-x-6.5 pl-5 lg:mt-11.5">
+              <span
+                aria-hidden="true"
+                className="bg-secondary group-hover:bg-secondary-hover absolute inset-y-0 right-0 w-9.25 rounded-full transition-[width,background-color] duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:w-full"
+              />
+              <span className="relative font-medium transition-colors duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:text-white">
+                Demander une estimation
+              </span>
+              <span className="relative flex h-9.25 w-9.25 items-center justify-center text-white transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rotate-45">
                 <ArrowUpRightIcon />
               </span>
             </a>
